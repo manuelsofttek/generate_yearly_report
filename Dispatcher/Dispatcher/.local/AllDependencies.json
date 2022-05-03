@@ -26,6 +26,18 @@
           "lib/net40/ClosedXML.dll": {}
         }
       },
+      "CredentialManagement/1.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "CredentialManagement"
+        ],
+        "compile": {
+          "lib/net35/_._": {}
+        },
+        "runtime": {
+          "lib/net35/CredentialManagement.dll": {}
+        }
+      },
       "CsvHelper/16.0.0": {
         "type": "package",
         "dependencies": {
@@ -904,6 +916,18 @@
         },
         "runtime": {
           "lib/net461/UiPath.Activities.RuntimeGovernance.dll": {}
+        }
+      },
+      "UiPath.Credentials.Activities/1.1.6479.13204": {
+        "type": "package",
+        "dependencies": {
+          "CredentialManagement": "1.0.2"
+        },
+        "compile": {
+          "lib/net40-client/_._": {}
+        },
+        "runtime": {
+          "lib/net40-client/UiPath.Credentials.Activities.dll": {}
         }
       },
       "UiPath.Excel.Activities/2.12.3": {
@@ -1831,6 +1855,18 @@
           "lib/net40/ClosedXML.dll": {}
         }
       },
+      "CredentialManagement/1.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "CredentialManagement"
+        ],
+        "compile": {
+          "lib/net35/_._": {}
+        },
+        "runtime": {
+          "lib/net35/CredentialManagement.dll": {}
+        }
+      },
       "CsvHelper/16.0.0": {
         "type": "package",
         "dependencies": {
@@ -2703,6 +2739,18 @@
         },
         "runtime": {
           "lib/net461/UiPath.Activities.RuntimeGovernance.dll": {}
+        }
+      },
+      "UiPath.Credentials.Activities/1.1.6479.13204": {
+        "type": "package",
+        "dependencies": {
+          "CredentialManagement": "1.0.2"
+        },
+        "compile": {
+          "lib/net40-client/_._": {}
+        },
+        "runtime": {
+          "lib/net40-client/UiPath.Credentials.Activities.dll": {}
         }
       },
       "UiPath.Excel.Activities/2.12.3": {
@@ -3639,6 +3687,17 @@
         "lib/net40/ClosedXML.dll",
         "lib/net40/ClosedXML.pdb",
         "lib/net40/ClosedXML.xml"
+      ]
+    },
+    "CredentialManagement/1.0.2": {
+      "sha512": "VkP04/jFXaxT3TkcRhzETYtOrznQxRmQ2J1XJdbXz47Bir7hIzPR7mFZk4GJQ4An4gozW+vonpf+iqTHomAkQw==",
+      "type": "package",
+      "path": "credentialmanagement/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "credentialmanagement.1.0.2.nupkg.sha512",
+        "credentialmanagement.nuspec",
+        "lib/net35/CredentialManagement.dll"
       ]
     },
     "CsvHelper/16.0.0": {
@@ -5199,6 +5258,17 @@
         "uipath.activities.runtimegovernance.nuspec"
       ]
     },
+    "UiPath.Credentials.Activities/1.1.6479.13204": {
+      "sha512": "2C7e17Lk1G6QenZQwA5q0DETGdAb9K34p6SqPcAOdHHyr+BtYSWLWhXn+zNlMF8ZCr51pHCiBPNp33nok2B3Qw==",
+      "type": "package",
+      "path": "uipath.credentials.activities/1.1.6479.13204",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net40-client/UiPath.Credentials.Activities.dll",
+        "uipath.credentials.activities.1.1.6479.13204.nupkg.sha512",
+        "uipath.credentials.activities.nuspec"
+      ]
+    },
     "UiPath.Excel.Activities/2.12.3": {
       "sha512": "ie20C+AXpGU1meSSv6/QdvJPwiUNySD12IP3S66PGTcVYVF4Wtehy+67FQnSTi524g/w8zrptWxmy6MTt7Upfg==",
       "type": "package",
@@ -6462,6 +6532,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "UiPath.Credentials.Activities >= 1.1.6479.13204 <= 1.1.6479.13204",
       "UiPath.Excel.Activities >= 2.12.3 <= 2.12.3",
       "UiPath.System.Activities >= 22.4.0 <= 22.4.0",
       "UiPath.Testing.Activities >= 22.4.1 <= 22.4.1",
@@ -6469,19 +6540,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedro.ceballos\\.nuget\\packages\\": {}
+    "C:\\Users\\manuel.bastidas\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Dispatcher",
       "projectName": "Dispatcher",
-      "projectPath": "C:\\Users\\pedro.ceballos\\Documents\\GitHub\\generate_yearly_report\\Dispatcher\\Dispatcher\\.local",
-      "packagesPath": "C:\\Users\\pedro.ceballos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro.ceballos\\Documents\\GitHub\\generate_yearly_report\\Dispatcher\\Dispatcher\\.local"
+      "projectPath": "C:\\Users\\manuel.bastidas\\Documents\\GitHub\\generate_yearly_report\\Dispatcher\\Dispatcher\\.local",
+      "packagesPath": "C:\\Users\\manuel.bastidas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manuel.bastidas\\Documents\\GitHub\\generate_yearly_report\\Dispatcher\\Dispatcher\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
+          "UiPath.Credentials.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.1.6479.13204, 1.1.6479.13204]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
