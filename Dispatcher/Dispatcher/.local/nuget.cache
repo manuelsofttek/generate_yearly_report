@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IJM0d5Pz3tqL76ct6wqaFMkaecDTP50cFkacXHXbbcDp6biEn0NNKlwEo6XRjxqUjk3yO4UXQWIa7ohIMut3+w==",
+  "dgSpecHash": "D5qLVANx6Hi6Os3wgKpXkKnHt5vHurkgoeWy0XQ1y6cxy5fCrY7OTZ4rTycRCAKt6kQwkT5Kqoniq3LFDD2cqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedro.ceballos\\Documents\\GitHub\\generate_yearly_report\\Dispatcher\\Dispatcher\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
+    "C:\\Users\\pedro.ceballos\\.nuget\\packages\\credentialmanagement\\1.0.2\\credentialmanagement.1.0.2.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\documentformat.openxml\\2.5.0\\documentformat.openxml.2.5.0.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0\\microsoft.aspnet.signalr.client.2.4.0.nupkg.sha512",
@@ -62,6 +63,7 @@
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\uipath\\22.4.38.42025\\uipath.22.4.38.42025.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.3\\uipath.activities.runtimegovernance.1.1.3.nupkg.sha512",
+    "C:\\Users\\pedro.ceballos\\.nuget\\packages\\uipath.credentials.activities\\1.1.6479.13204\\uipath.credentials.activities.1.1.6479.13204.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\uipath.excel.activities\\2.12.3\\uipath.excel.activities.2.12.3.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\uipath.imageprocessing\\22.4.0\\uipath.imageprocessing.22.4.0.nupkg.sha512",
     "C:\\Users\\pedro.ceballos\\.nuget\\packages\\uipath.ocr.activities\\3.6.1-preview\\uipath.ocr.activities.3.6.1-preview.nupkg.sha512",
