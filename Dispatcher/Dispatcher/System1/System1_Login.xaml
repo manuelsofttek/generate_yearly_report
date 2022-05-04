@@ -80,7 +80,6 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="System1_Login" sap:VirtualizedContainerService.HintSize="476,1247" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -96,18 +95,12 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke GetAppCredentials workflow" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\GetAppCredentials.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_Username">
-          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="vStr_Username" />
-        </OutArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_Credential">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="System1_Credential" />
-        </InArgument>
-        <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_Password">
-          <mva:VisualBasicReference x:TypeArguments="ss:SecureString" ExpressionText="vStr_Password" />
-        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_Username">[vStr_Username]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Credential">[System1_Credential]</InArgument>
+        <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_Password">[vStr_Password]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="434,1003" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="08c0c54d-48b1-4d19-8b50-64ad39b849a9" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="434,1003" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="08c0c54d-48b1-4d19-8b50-64ad39b849a9" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
